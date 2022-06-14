@@ -59,6 +59,14 @@ function js_task() {
     .pipe(dest("./build/js"));
 }
 
+function watch_css_task() {
+  watch(["./assets/sass/**/*.scss"], { interval: 1000 }, parallel(css_task));
+}
+
+function watch_js_task() {
+  watch(["./assets/js/**/*.js"], { interval: 1000 }, parallel(js_task));
+}
+
 function watch_task() {
   watch(
     ["./assets/sass/**/*.scss", "./assets/js/**/*.js"],
@@ -72,6 +80,8 @@ exports.css_lib_task = css_lib_task;
 exports.js_lib_task = js_lib_task;
 exports.css_task = css_task;
 exports.js_task = js_task;
+exports.watch_css_task = watch_css_task;
+exports.watch_js_task = watch_js_task;
 exports.compile_libs = series(css_lib_task, js_lib_task);
 
 exports.default = watch_task;
