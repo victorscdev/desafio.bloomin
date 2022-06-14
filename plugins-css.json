@@ -1,8 +1,9 @@
 [
   {
     "arquivos": [
-      "./libs/bootstrap-5.1.3/css/bootstrap.css",
-      "./libs/slick-carousel/slick/slick.css"
+      "./libs/slick-carousel/slick/slick-theme.css",
+      "./libs/slick-carousel/slick/slick.css",
+      "./libs/bootstrap-5.1.3/css/bootstrap.min.css"
     ]
   }
 ]
