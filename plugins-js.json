@@ -1,0 +1,8 @@
+[
+  {
+    "arquivos": [
+      "./libs/bootstrap-5.1.3/js/bootstrap.js",
+      "./libs/slick-carousel/slick/slick.js"
+    ]
+  }
+]
