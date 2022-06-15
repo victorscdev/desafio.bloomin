@@ -1,6 +1,7 @@
 #people {
 	padding: rem(40) rem(40);
 	.people_types {
+		border-bottom: none;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -8,15 +9,26 @@
 		@media (max-width: 575px) {
 			flex-direction: column;
 		}
-		h5 {
+		h5,
+		button {
 			cursor: pointer;
+			color: #000000;
+			font-size: 1.25rem;
 			margin: 0 rem(4);
 			padding: 0 rem(8);
 			text-transform: uppercase;
+			&:hover {
+				border-color: transparent;
+				border-bottom: 2px solid #000000;
+				font-weight: bold;
+			}
 			@media (max-width: 575px) {
 				margin: rem(8) rem(4);
 			}
 			&.active {
+				color: #000000;
+				background-color: transparent;
+				border-color: transparent;
 				border-bottom: 2px solid #000000;
 				font-weight: bold;
 			}
@@ -87,6 +99,14 @@
 						color: #ffffff;
 					}
 				}
+			}
+		}
+		&.tab-content {
+			& > .active {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				width: 100%;
 			}
 		}
 	}

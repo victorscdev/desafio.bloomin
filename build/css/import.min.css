@@ -1491,6 +1491,7 @@ table {
 #people {
   padding: 2.5rem 2.5rem; }
   #people .people_types {
+    border-bottom: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1498,15 +1499,28 @@ table {
     @media (max-width: 575px) {
       #people .people_types {
         flex-direction: column; } }
-    #people .people_types h5 {
+    #people .people_types h5,
+    #people .people_types button {
       cursor: pointer;
+      color: #000000;
+      font-size: 1.25rem;
       margin: 0 0.25rem;
       padding: 0 0.5rem;
       text-transform: uppercase; }
+      #people .people_types h5:hover,
+      #people .people_types button:hover {
+        border-color: transparent;
+        border-bottom: 2px solid #000000;
+        font-weight: bold; }
       @media (max-width: 575px) {
-        #people .people_types h5 {
+        #people .people_types h5,
+        #people .people_types button {
           margin: 0.5rem 0.25rem; } }
-      #people .people_types h5.active {
+      #people .people_types h5.active,
+      #people .people_types button.active {
+        color: #000000;
+        background-color: transparent;
+        border-color: transparent;
         border-bottom: 2px solid #000000;
         font-weight: bold; }
   #people .card_people {
@@ -1564,6 +1578,11 @@ table {
             margin-bottom: 0.5rem; }
           #people .card_people__card .overlay_desc__text h6 {
             color: #ffffff; }
+    #people .card_people.tab-content > .active {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%; }
   #people .btn-more {
     background-color: #b4d3d3;
     border-radius: 40px;
