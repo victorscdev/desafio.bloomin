@@ -1339,6 +1339,66 @@ table {
 
 /*********************************** MIXINS ***********************************/
 /*********************************** COMPONENTS ***********************************/
+#banner {
+  padding-top: 5rem;
+  padding-bottom: 3.5rem; }
+  #banner .banner_img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 37.5rem;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: relative; }
+    #banner .banner_img h1 {
+      font-size: 4.5rem;
+      font-weight: bold;
+      width: 6.25rem;
+      margin-bottom: 12.5rem;
+      position: absolute;
+      left: -56px; }
+      @media (max-width: 991px) {
+        #banner .banner_img h1 {
+          font-size: 3.5rem;
+          left: 0; } }
+    #banner .banner_img h4 {
+      position: absolute;
+      left: -56px;
+      margin-bottom: 7.5rem;
+      text-transform: uppercase; }
+      @media (max-width: 991px) {
+        #banner .banner_img h4 {
+          left: 0; } }
+    #banner .banner_img .btn-profile {
+      text-decoration: none;
+      position: absolute;
+      left: -56px;
+      display: flex;
+      align-items: center; }
+      @media (max-width: 991px) {
+        #banner .banner_img .btn-profile {
+          left: 0; } }
+      #banner .banner_img .btn-profile span {
+        background-color: #b4d3d3;
+        color: #ffffff;
+        padding: 1.8125rem 1.5rem;
+        text-transform: uppercase; }
+      #banner .banner_img .btn-profile i {
+        background-color: #ffffff;
+        color: #000000;
+        font-size: 1.5625rem;
+        margin-bottom: 0;
+        padding: 1.5rem; }
+    #banner .banner_img .grafismo {
+      background-color: #c1dada;
+      height: 37.5rem;
+      width: 37.5rem;
+      position: absolute;
+      right: -283px;
+      top: -182px;
+      z-index: -1; }
+
 #footer {
   padding: 2.5rem 0; }
   #footer .btn-newsletter {
@@ -1362,25 +1422,24 @@ table {
 #header {
   display: flex;
   align-items: center;
-  justify-content: space-between; }
-  #header .navbar {
-    padding-top: 2rem; }
-    #header .navbar .navbar-nav {
-      flex-direction: row;
-      align-items: center; }
-      #header .navbar .navbar-nav .nav-item {
-        margin-right: 2rem; }
-        #header .navbar .navbar-nav .nav-item .nav-icon {
-          cursor: pointer;
-          color: #000000;
-          font-size: 1.5rem; }
-        #header .navbar .navbar-nav .nav-item .nav-link {
-          color: #000000;
-          font-size: 1rem;
-          font-weight: bold;
-          text-transform: uppercase; }
-          #header .navbar .navbar-nav .nav-item .nav-link:hover {
-            text-decoration: underline; }
+  justify-content: space-between;
+  padding-top: 3.375rem; }
+  #header .navbar .navbar-nav {
+    flex-direction: row;
+    align-items: center; }
+    #header .navbar .navbar-nav .nav-item {
+      margin-right: 2rem; }
+      #header .navbar .navbar-nav .nav-item .nav-icon {
+        cursor: pointer;
+        color: #000000;
+        font-size: 1.5rem; }
+      #header .navbar .navbar-nav .nav-item .nav-link {
+        color: #000000;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase; }
+        #header .navbar .navbar-nav .nav-item .nav-link:hover {
+          text-decoration: underline; }
   #header .logotipo {
     margin-right: 5rem; }
   #header .icon-magnifying-glass {
@@ -1436,11 +1495,17 @@ table {
     align-items: center;
     justify-content: center;
     margin-bottom: 1.5rem; }
+    @media (max-width: 575px) {
+      #people .people_types {
+        flex-direction: column; } }
     #people .people_types h5 {
       cursor: pointer;
       margin: 0 0.25rem;
       padding: 0 0.5rem;
       text-transform: uppercase; }
+      @media (max-width: 575px) {
+        #people .people_types h5 {
+          margin: 0.5rem 0.25rem; } }
       #people .people_types h5.active {
         border-bottom: 2px solid #000000;
         font-weight: bold; }

@@ -2,8 +2,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	padding-top: rem(54);
 	.navbar {
-		padding-top: rem(32);
 		.navbar-nav {
 			flex-direction: row;
 			align-items: center;
