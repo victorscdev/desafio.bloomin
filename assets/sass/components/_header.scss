@@ -1,0 +1,37 @@
+#header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.navbar {
+		padding-top: rem(32);
+		.navbar-nav {
+			flex-direction: row;
+			align-items: center;
+			.nav-item {
+				margin-right: rem(32);
+				.nav-icon {
+					cursor: pointer;
+					color: #000000;
+					font-size: rem(24);
+				}
+				.nav-link {
+					color: #000000;
+					font-size: rem(16);
+					font-weight: bold;
+					text-transform: uppercase;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+	.logotipo {
+		margin-right: rem(80);
+	}
+	.icon-magnifying-glass {
+		cursor: pointer;
+		color: #000000;
+		font-size: rem(24);
+	}
+}

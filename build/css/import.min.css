@@ -1312,7 +1312,8 @@ section {
 
 html,
 body {
-  font-family: 'montserrat_regular', Courier, monospace; }
+  font-family: 'montserrat_regular', Courier, monospace;
+  scroll-behavior: smooth; }
 
 body {
   line-height: 1; }
@@ -1357,6 +1358,35 @@ table {
     margin-right: 1.5rem; }
     #footer .social i:last-of-type {
       margin-right: 0; }
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  #header .navbar {
+    padding-top: 2rem; }
+    #header .navbar .navbar-nav {
+      flex-direction: row;
+      align-items: center; }
+      #header .navbar .navbar-nav .nav-item {
+        margin-right: 2rem; }
+        #header .navbar .navbar-nav .nav-item .nav-icon {
+          cursor: pointer;
+          color: #000000;
+          font-size: 1.5rem; }
+        #header .navbar .navbar-nav .nav-item .nav-link {
+          color: #000000;
+          font-size: 1rem;
+          font-weight: bold;
+          text-transform: uppercase; }
+          #header .navbar .navbar-nav .nav-item .nav-link:hover {
+            text-decoration: underline; }
+  #header .logotipo {
+    margin-right: 5rem; }
+  #header .icon-magnifying-glass {
+    cursor: pointer;
+    color: #000000;
+    font-size: 1.5rem; }
 
 .logotipo {
   color: #000000;
