@@ -51,7 +51,7 @@ function css_task() {
 }
 
 function js_task() {
-	return src('./assets/js/**/*.js')
+	return src('./assets/js/main.js')
 		.pipe(gulp_sourcemaps.init())
 		.pipe(gulp_rename({ suffix: '.min' }))
 		.pipe(gulp_terser())
@@ -64,7 +64,7 @@ function watch_css_task() {
 }
 
 function watch_js_task() {
-	watch(['./assets/js/**/*.js'], { interval: 1000 }, parallel(js_task));
+	watch(['./assets/js/main.js'], { interval: 1000 }, parallel(js_task));
 }
 
 function watch_task() {

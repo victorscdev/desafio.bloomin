@@ -1370,6 +1370,7 @@ table {
       font-weight: bold;
       margin-bottom: 1rem; }
     #latest_news .news__texts span {
+      color: #808087;
       font-family: 'montserrat_thin'; }
 
 #people {
@@ -1457,5 +1458,131 @@ table {
     @media (max-width: 767px) {
       #people .btn-more {
         width: 100%; } }
+
+#trends {
+  padding: 2.5rem 0; }
+  #trends .card_trend_vertical {
+    cursor: pointer;
+    background-color: #e2e8e8;
+    display: flex;
+    height: 28.125rem;
+    width: 100%; }
+    #trends .card_trend_vertical__text {
+      background-color: #b7d5d5;
+      padding: 2.5rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; }
+      @media (min-width: 992px) {
+        #trends .card_trend_vertical__text {
+          width: 40%; } }
+      #trends .card_trend_vertical__text .icon-controller-play {
+        color: #ffffff;
+        font-size: 3.5rem;
+        margin-bottom: 2.5rem; }
+      #trends .card_trend_vertical__text h3 {
+        color: #ffffff;
+        font-weight: bold;
+        margin-bottom: 1.5rem; }
+      #trends .card_trend_vertical__text span {
+        color: #ffffff; }
+    #trends .card_trend_vertical__tag {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      width: 0;
+      display: flex;
+      align-items: baseline;
+      justify-content: flex-end; }
+      @media (min-width: 992px) {
+        #trends .card_trend_vertical__tag {
+          width: 60%; } }
+      #trends .card_trend_vertical__tag .tag {
+        background-color: #ffffff;
+        color: #000000;
+        font-weight: bold;
+        margin: 0.5rem;
+        padding: 1rem 1.5rem;
+        text-transform: uppercase; }
+  #trends .card_trend_horizontal img {
+    display: block;
+    margin-bottom: 1.5rem; }
+  #trends .card_trend_horizontal h3 {
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 1.5rem; }
+  #trends .card_trend_horizontal span {
+    color: #808087; }
+  #trends .card_trend_slick_play {
+    position: relative; }
+    #trends .card_trend_slick_play__icon {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      bottom: 2.5rem;
+      left: 2.5rem;
+      z-index: 10; }
+      #trends .card_trend_slick_play__icon .icon-controller-play {
+        border: 1px solid #ffffff;
+        border-radius: 100%;
+        color: #ffffff;
+        font-size: 4rem;
+        font-weight: bold;
+        padding: 1rem 0.625rem 1rem 1rem; }
+      #trends .card_trend_slick_play__icon span {
+        color: #ffffff;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-left: 1rem;
+        text-transform: uppercase; }
+    #trends .card_trend_slick_play__carousel__img {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 28.125rem;
+      width: 100%; }
+    #trends .card_trend_slick_play__carousel.slick-dotted .slick-dots {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      bottom: 50%;
+      transform: translateY(50%); }
+      #trends .card_trend_slick_play__carousel.slick-dotted .slick-dots li.slick-active button::before {
+        font-size: 40px;
+        opacity: 1; }
+      #trends .card_trend_slick_play__carousel.slick-dotted .slick-dots li button::before {
+        color: #fff;
+        font-size: 24px;
+        opacity: 0.75; }
+  #trends .card_trend_slick_personal__carousel__img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50rem;
+    width: 100%; }
+    @media (max-width: 575px) {
+      #trends .card_trend_slick_personal__carousel__img {
+        height: 18.75rem; } }
+    @media (max-width: 767px) {
+      #trends .card_trend_slick_personal__carousel__img {
+        height: 18.75rem; } }
+  #trends .card_trend_slick_personal__carousel.slick-dotted .slick-dots {
+    bottom: 1rem; }
+    #trends .card_trend_slick_personal__carousel.slick-dotted .slick-dots li.slick-active button::before {
+      font-size: 40px;
+      opacity: 1; }
+    #trends .card_trend_slick_personal__carousel.slick-dotted .slick-dots li button::before {
+      color: #fff;
+      font-size: 24px;
+      opacity: 0.75; }
+  #trends .card_trend_slick_personal__text h3 {
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 1.5rem; }
+  #trends .card_trend_slick_personal__text span {
+    color: #808087; }
 
 /*# sourceMappingURL=import.min.css.map */

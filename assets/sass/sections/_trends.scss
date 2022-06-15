@@ -1,0 +1,180 @@
+#trends {
+	padding: rem(40) 0;
+	.card_trend_vertical {
+		cursor: pointer;
+		background-color: #e2e8e8;
+		display: flex;
+		height: rem(450);
+		width: 100%;
+		&__text {
+			background-color: #b7d5d5;
+			padding: rem(40);
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			@media (min-width: 992px) {
+				width: 40%;
+			}
+			.icon-controller-play {
+				color: #ffffff;
+				font-size: rem(56);
+				margin-bottom: rem(40);
+			}
+			h3 {
+				color: #ffffff;
+				font-weight: bold;
+				margin-bottom: rem(24);
+			}
+			span {
+				color: #ffffff;
+			}
+		}
+		&__tag {
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 100%;
+			width: 0;
+			display: flex;
+			align-items: baseline;
+			justify-content: flex-end;
+			@media (min-width: 992px) {
+				width: 60%;
+			}
+			.tag {
+				background-color: #ffffff;
+				color: #000000;
+				font-weight: bold;
+				margin: rem(8);
+				padding: rem(16) rem(24);
+				text-transform: uppercase;
+			}
+		}
+	}
+	.card_trend_horizontal {
+		img {
+			display: block;
+			margin-bottom: rem(24);
+		}
+		h3 {
+			color: #000000;
+			font-weight: bold;
+			margin-bottom: rem(24);
+		}
+		span {
+			color: #808087;
+		}
+	}
+	.card_trend_slick_play {
+		position: relative;
+		&__icon {
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			position: absolute;
+			bottom: rem(40);
+			left: rem(40);
+			z-index: 10;
+			.icon-controller-play {
+				border: 1px solid #ffffff;
+				border-radius: 100%;
+				color: #ffffff;
+				font-size: rem(64);
+				font-weight: bold;
+				padding: rem(16) rem(10) rem(16) rem(16);
+			}
+			span {
+				color: #ffffff;
+				font-size: rem(24);
+				font-weight: bold;
+				margin-left: rem(16);
+				text-transform: uppercase;
+			}
+		}
+		&__carousel {
+			&__img {
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				height: rem(450);
+				width: 100%;
+			}
+			&.slick-dotted {
+				.slick-dots {
+					display: flex;
+					flex-direction: column;
+					align-items: flex-end;
+					bottom: 50%;
+					transform: translateY(50%);
+					li {
+						&.slick-active {
+							button {
+								&::before {
+									font-size: 40px;
+									opacity: 1;
+								}
+							}
+						}
+						button {
+							&::before {
+								color: #fff;
+								font-size: 24px;
+								opacity: 0.75;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.card_trend_slick_personal {
+		&__carousel {
+			&__img {
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				height: rem(800);
+				width: 100%;
+				@media (max-width: 575px) {
+					height: rem(300);
+				}
+				@media (max-width: 767px) {
+					height: rem(300);
+				}
+			}
+			&.slick-dotted {
+				.slick-dots {
+					bottom: rem(16);
+					li {
+						&.slick-active {
+							button {
+								&::before {
+									font-size: 40px;
+									opacity: 1;
+								}
+							}
+						}
+						button {
+							&::before {
+								color: #fff;
+								font-size: 24px;
+								opacity: 0.75;
+							}
+						}
+					}
+				}
+			}
+		}
+		&__text {
+			h3 {
+				color: #000000;
+				font-weight: bold;
+				margin-bottom: rem(24);
+			}
+			span {
+				color: #808087;
+			}
+		}
+	}
+}
