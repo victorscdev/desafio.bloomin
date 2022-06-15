@@ -1372,4 +1372,62 @@ table {
     #latest_news .news__texts span {
       font-family: 'montserrat_thin'; }
 
+#people {
+  padding: 2.5rem 2.5rem; }
+  #people .card_people {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%; }
+    #people .card_people__card {
+      cursor: pointer;
+      height: 25rem;
+      width: 100%;
+      position: relative;
+      overflow: hidden; }
+      #people .card_people__card:hover .overlay_desc {
+        height: 100%;
+        visibility: visible; }
+      @media (min-width: 768px) {
+        #people .card_people__card {
+          width: 50%; } }
+      @media (min-width: 1200px) {
+        #people .card_people__card {
+          width: 25%; } }
+      #people .card_people__card img {
+        height: 100%;
+        width: 100%; }
+      #people .card_people__card .overlay_desc {
+        background: #000;
+        height: 0;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        opacity: 0.75;
+        visibility: hidden;
+        transition: 0.2s ease 0s;
+        padding: 1rem; }
+        #people .card_people__card .overlay_desc__icon {
+          position: absolute;
+          right: 16px; }
+          #people .card_people__card .overlay_desc__icon .icon-arrow-long-up {
+            background: #b4d3d3;
+            border-radius: 50%;
+            padding: 8px; }
+            #people .card_people__card .overlay_desc__icon .icon-arrow-long-up::before {
+              transform: rotate(45deg);
+              display: -webkit-inline-box; }
+        #people .card_people__card .overlay_desc__text {
+          position: absolute;
+          bottom: 16px;
+          left: 50%;
+          transform: translateX(-50%);
+          text-align: center; }
+          #people .card_people__card .overlay_desc__text h5 {
+            color: #ffffff;
+            margin-bottom: 0.5rem; }
+          #people .card_people__card .overlay_desc__text h6 {
+            color: #ffffff; }
+
 /*# sourceMappingURL=import.min.css.map */
