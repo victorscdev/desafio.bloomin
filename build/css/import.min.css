@@ -1310,7 +1310,8 @@ nav,
 section {
   display: block; }
 
-html {
+html,
+body {
   font-family: 'montserrat_regular', Courier, monospace; }
 
 body {
@@ -1337,5 +1338,38 @@ table {
 
 /*********************************** MIXINS ***********************************/
 /*********************************** COMPONENTS ***********************************/
+/*********************************** SECTIONS ***********************************/
+#latest_news {
+  padding: 2.5rem 0rem; }
+  #latest_news h2 {
+    margin-bottom: 1rem;
+    text-align: center; }
+    #latest_news h2 ~ hr {
+      background-color: #000000;
+      color: #000000;
+      height: 0.125rem;
+      margin: 0 auto 1.5rem;
+      opacity: 1;
+      width: 6.25rem; }
+  #latest_news .news {
+    cursor: pointer;
+    display: flex;
+    align-items: center; }
+    #latest_news .news:hover .news__texts h3 {
+      color: #87bbbc;
+      transition: 0.3s; }
+    #latest_news .news:hover .news__texts span {
+      font-weight: bold;
+      transition: 0.3s; }
+    #latest_news .news img {
+      border-radius: 0.25rem;
+      height: 9.375rem;
+      margin-right: 1.5rem;
+      width: 9.375rem; }
+    #latest_news .news__texts h3 {
+      font-weight: bold;
+      margin-bottom: 1rem; }
+    #latest_news .news__texts span {
+      font-family: 'montserrat_thin'; }
 
 /*# sourceMappingURL=import.min.css.map */
