@@ -9,7 +9,8 @@
 @import './mixins/functions';
 
 /*********************************** COMPONENTS ***********************************/
-// @import "./components/cards";
+@import './components/footer';
+@import './components/logotipo';
 
 /*********************************** SECTIONS ***********************************/
 @import './sections/latest_news';

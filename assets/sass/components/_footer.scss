@@ -1,0 +1,26 @@
+#footer {
+	padding: rem(40) 0;
+	.btn-newsletter {
+		border-left: 1px solid #000000;
+		color: #000000;
+		font-size: rem(16);
+		font-weight: bold;
+		padding: rem(16) rem(0) rem(16) rem(24);
+		text-transform: uppercase;
+		text-decoration: none;
+		transition: 0.3s;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	.social {
+		i {
+			cursor: pointer;
+			font-size: rem(24);
+			margin-right: rem(24);
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+	}
+}
