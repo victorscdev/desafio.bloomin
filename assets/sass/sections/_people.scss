@@ -1,5 +1,21 @@
 #people {
 	padding: rem(40) rem(40);
+	.people_types {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: rem(24);
+		h5 {
+			cursor: pointer;
+			margin: 0 rem(4);
+			padding: 0 rem(8);
+			text-transform: uppercase;
+			&.active {
+				border-bottom: 2px solid #000000;
+				font-weight: bold;
+			}
+		}
+	}
 	.card_people {
 		display: flex;
 		flex-direction: row;
@@ -66,6 +82,23 @@
 					}
 				}
 			}
+		}
+	}
+	.btn-more {
+		background-color: #b4d3d3;
+		color: #ffffff;
+		display: block;
+		font-weight: bold;
+		margin: rem(40) auto 0;
+		padding: rem(16) rem(24);
+		width: rem(200);
+		text-transform: uppercase;
+		&:hover {
+			transition: 0.3s;
+			opacity: 0.75;
+		}
+		@media (max-width: 767px) {
+			width: 100%;
 		}
 	}
 }

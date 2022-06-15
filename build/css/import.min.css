@@ -1374,6 +1374,19 @@ table {
 
 #people {
   padding: 2.5rem 2.5rem; }
+  #people .people_types {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem; }
+    #people .people_types h5 {
+      cursor: pointer;
+      margin: 0 0.25rem;
+      padding: 0 0.5rem;
+      text-transform: uppercase; }
+      #people .people_types h5.active {
+        border-bottom: 2px solid #000000;
+        font-weight: bold; }
   #people .card_people {
     display: flex;
     flex-direction: row;
@@ -1429,5 +1442,20 @@ table {
             margin-bottom: 0.5rem; }
           #people .card_people__card .overlay_desc__text h6 {
             color: #ffffff; }
+  #people .btn-more {
+    background-color: #b4d3d3;
+    color: #ffffff;
+    display: block;
+    font-weight: bold;
+    margin: 2.5rem auto 0;
+    padding: 1rem 1.5rem;
+    width: 12.5rem;
+    text-transform: uppercase; }
+    #people .btn-more:hover {
+      transition: 0.3s;
+      opacity: 0.75; }
+    @media (max-width: 767px) {
+      #people .btn-more {
+        width: 100%; } }
 
 /*# sourceMappingURL=import.min.css.map */
