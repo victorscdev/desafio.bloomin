@@ -3,7 +3,10 @@
 @import './fonts/icomoon';
 
 /*********************************** BASE ***********************************/
-// @import "./base/tipografia.scss";
+@import './base/reset';
+
+/*********************************** MIXINS ***********************************/
+@import './mixins/functions';
 
 /*********************************** COMPONENTS ***********************************/
 // @import "./components/cards";
